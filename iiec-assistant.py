@@ -1,7 +1,7 @@
 import os
 import pyttsx3
 import speech_recognition as sr
-import pyaudio
+
 prog_dict={"calculator":"calc","notepad":"notepad","editor":"notepad","paint":"mspaint","mspaint":"mspaint","prompt":"cmd","chrome":"chrome","browser":"chrome",'excel':'EXCEL','msexcel':'EXCEL','spreadsheets':"EXCEL",'word':'winword',"msword":'word'}
 srr=sr.Recognizer()
 print("Welcome to IIEC-Assistant")
