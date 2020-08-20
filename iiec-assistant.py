@@ -20,7 +20,7 @@ def voice_input():
         except sr.RequestError as e:
             print("Could not request results {0}".format(e))
 
-def software_launch(user_input):
+def software_opener(user_input):
     for word in user_input:
         for pgms in prog_dict:
             if word in pgms:
@@ -33,7 +33,9 @@ def software_launch(user_input):
 while True:
     print("Which software you want to open?")
     user_input = voice_input().split()  
-    software_launch(user_input)
+    
+    if 'donot' not in user_input and 'not' not in user_input:
+        software_opener(user_input)
     ch=input("Do you want to continue ?[y/n]:")
     if ch.lower()=="n":
         break
