@@ -5,7 +5,7 @@ import pyaudio
 prog_dict={"calculator":"calc","notepad":"notepad","editor":"notepad","paint":"mspaint","mspaint":"mspaint","prompt":"cmd","chrome":"chrome","browser":"chrome",'excel':'EXCEL','msexcel':'EXCEL','spreadsheets':"EXCEL",'word':'winword',"msword":'word'}
 srr=sr.Recognizer()
 print("Welcome to IIEC-Assistant")
-pyttsx3.speak("Hello user I can help you to open software programs!!!")
+pyttsx3.speak("Hello user I can help you to open OS based programs!!!")
 def voice_input():
     while True:
         try:
