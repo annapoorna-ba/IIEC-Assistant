@@ -4,7 +4,7 @@ I did this small python project as a part of IIEC-Rise Python specialization tra
 
 Requirements:PyAudio, SpeechRecognition and Pyttsx3 libraries
 
-Video Demo:
+Video Demo:https://drive.google.com/file/d/1uVc_9P8dYX5Tq5g5QmmVBpkgUUJGl-r7/view?usp=sharing
 
 Links Referred:
 1.https://pypi.org/project/pyttsx3/
