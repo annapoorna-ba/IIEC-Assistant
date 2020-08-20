@@ -16,7 +16,7 @@ def voice_input():
                 text=text.lower()
                 return text
         except sr.UnknownValueError:
-            print("could not understand audio")
+            print("Try again!!")
         except sr.RequestError as e:
             print("Could not request results {0}".format(e))
 
