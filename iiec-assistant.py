@@ -2,7 +2,7 @@ import os
 import pyttsx3
 import speech_recognition as sr
 import pyaudio
-prog_dict={("calculator","calci"):"calc",("notepad","editor"):"notepad",("paint","mspaint"):"mspaint",("prompt","cmd"):"cmd",("chrome","browser"):"chrome",('excel','msexcel','spreadsheets'):"EXCEL"}
+prog_dict={"calculator":"calc","notepad":"notepad","editor":"notepad","paint":"mspaint","mspaint":"mspaint","prompt":"cmd","chrome":"chrome","browser":"chrome",'excel':'EXCEL','msexcel':'EXCEL','spreadsheets':"EXCEL",'word':'winword',"msword":'word'}
 srr=sr.Recognizer()
 print("Welcome to IIEC-Assistant")
 pyttsx3.speak("Hello user I can help you to open software programs!!!")
@@ -22,18 +22,20 @@ def voice_input():
 
 def software_opener(user_input):
     for word in user_input:
-        for pgms in prog_dict:
-            if word in pgms:
-                cmd=prog_dict[pgms]
-                print("opening",word)
-                os.system(cmd)
-                return
+    
+        if word in prog_dict:
+            cmd=prog_dict[word]
+            print("opening",word)
+            st="opening"+word
+            pyttsx3.speak(st)
+            os.system(cmd)
+            return
     print("App not found")
 
 while True:
     print("Which software you want to open?")
     user_input = voice_input().split()  
-    
+   
     if 'donot' not in user_input and 'not' not in user_input:
         software_opener(user_input)
     ch=input("Do you want to continue ?[y/n]:")
