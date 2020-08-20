@@ -2,7 +2,7 @@ import os
 import pyttsx3
 import speech_recognition as sr
 import pyaudio
-prog_dict={("calculator","calci"):"calc",("notepad","editor"):"notepad",("prompt","cmd"):"cmd",("chrome","browser"):"chrome",('excel','msexcel','spreadsheets'):"EXCEL"}
+prog_dict={("calculator","calci"):"calc",("notepad","editor"):"notepad",("paint","mspaint"):"mspaint",("prompt","cmd"):"cmd",("chrome","browser"):"chrome",('excel','msexcel','spreadsheets'):"EXCEL"}
 srr=sr.Recognizer()
 print("Welcome to IIEC-Assistant")
 pyttsx3.speak("Hello user I can help you to open software programs!!!")
