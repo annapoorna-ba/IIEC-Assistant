@@ -25,7 +25,7 @@ def software_opener(user_input):
         for pgms in prog_dict:
             if word in pgms:
                 cmd=prog_dict[pgms]
-                print("opening",cmd)
+                print("opening",word)
                 os.system(cmd)
                 return
     print("App not found")
